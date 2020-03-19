@@ -22,23 +22,142 @@ $grayish-blue: hsl(208, 11%, 55%)
     margin: 0 
     box-sizing: border-box
     font-size: 18px
+    font-family: 'Open Sans', sans-serif
     
 html, body, .page-wrapper
     height: 100%
 
+header
+    font-family: 'Poppins', sans-serif
+    background: url(../images/bg-hero-mobile.svg)
+    background-size: cover
 #top
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
-
+    padding: 20px 10px
+.header-logo
+    width: 100px
+.button-try-it
+    background-color: white
+    border-radius: 10px
+    font-size: 0.6rem
+    padding: 4px 10px
+    border: 0
+    box-shadow: 
+    font-weight: 600
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1)
 .build-community
     display: flex
     flex-direction: column
+    align-items: center
+    text-align: center
+    padding: 0 9%
+    padding-top: 4rem
+    padding-bottom: 1rem
+.build-community h1
+    font-size: 1.4rem
+    margin-bottom: 1rem
+.build-community p
+    font-family: 'Open Sans', sans-serif
+    font-size: 0.9rem
+    font-weight: 400
+    margin-bottom: 2rem
+.build-community button
+    background-color: $pink
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    color: white
+    max-width: 250px
+    font-size: 0.65rem
+    padding: 11px 55px
+    border: 0
+    border-radius: 25px
+    margin-bottom: 3rem
 .build-community img
     max-width: 100%
 .card
     display: flex
     flex-direction: column
+    padding: 40px
+    margin: 5%
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1)
+    text-align: center
+    border-radius: 20px
+.card h1
+    font-family: 'Poppins', sans-serif
+    font-size: 1.1rem
+    font-weight: 600
+    margin-bottom: 1rem
 .card img
     max-width: 100%
+    margin-bottom: 3rem
+.card p
+    font-family: 'Open Sans', sans-serif
+    font-size: 0.75rem
+    color: $grayish-blue
+
+footer
+    background-color: $very-dark-cyan
+    color: white
+    padding: 45px 6%
+.footer-logo
+    width: 200px
+    color: white
+.footer-card
+    background-color: white
+    color: black
+    border-radius: 15px
+    padding: 40px 12px
+    text-align: center
+.footer-card h1
+    font-family: 'Poppins', sans-serif
+    font-weight: 600
+    font-size: 1rem
+    margin-bottom: 1.3rem
+.footer-card button
+    background-color: $pink
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    color: white
+    font-size: 0.55rem
+    padding: 11px 47px
+    border: 0
+    border-radius: 25px
+footer .contacts 
+    display: flex
+    flex-direction: column
+footer .contacts .row
+    display: flex
+    flex-direction: row
+    margin-bottom: 24px
+footer .contacts .col1
+    margin-right: 30px
+footer .links ul
+    list-style: none
+footer .links ul li
+    margin-bottom: 16px
+footer .links ul a
+    text-decoration: none
+    color: white
+footer .social-icons
+    text-align: center
+footer .social-icons i
+    border-radius: 50%
+    border: 1px solid white
+    padding: 7px
+    color: white
+    font-size: 15px
+    width: 30px
+.fa-facebook-f:before, .fa-facebook:before 
+    content: "\f09a"
+
+footer .lower
+    padding: 20px
+footer .copyright
+    font-size: 0.6rem
+    text-align: center
+    font-family: 'Poppins', sans-serif
+    font-weight: 600
+    color: $grayish-blue

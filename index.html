@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://use.fontawesome.com/caae10597c.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,11 +20,11 @@
   <div class="page-container">
     <div id="top">
       <img src="./images/logo.svg" alt="" class="header-logo">
-      <nav><button>Try It Free</button></nav>
+      <nav><button class="button-try-it">Try It Free</button></nav>
     </div>
     <header>
       <div class="build-community">
-        <h1>Build The Community Your Fans Will Love</h1>
+        <h1>Build The Community<br> Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
         Create connections with your users as you engage in genuine discussion. </p>
   
@@ -49,43 +51,51 @@
         <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
           This means, once signed in to your app, your users can start chatting immediately.</p>
       </div>
-      <div>
+      
+    </main>
+    <footer>
+      <div class="footer-card">
         <h1>Ready To Build Your Community?</h1>
         <button>Get Started For Free</button>
       </div>
-    </main>
-    <footer>
       <div class="upper">
-        logo
+        <img src="./images/logo-white.svg" alt="footer-logo" class="footer-logo">
       </div>
       <div class="center">
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua
-          
-            +1-543-123-4567
-            example@huddle.com
+        <div class="contacts">
+          <div class="row">
+            <div class="col1"><img src="./images/icon-location.svg" alt="location icon"></div>
+            <div class="col2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua</div>
+          </div>
+          <div class="row">
+            <div class="col1"><img src="./images/icon-phone.svg" alt=""></div>
+            <div class="col2">+1-543-123-4567</div>
+          </div>
+          <div class="row">
+            <div class="col1"><img src="./images/icon-email.svg" alt="" class=""></div>
+            <div class="col2">example@huddle.com</div>
+          </div>
         </div>
         <div class="links">
-          About Us
-           What We Do
-          FAQ
-          Career
-          Blog
-          Contact Us
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">What We Do</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
         </div>
         <div class="social-icons">
-          social icons
+          <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="lower">
-        &copy; Copyright 2018 Huddle. All rights reserved.
+        <div class="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</div>
       </div>
-      
-    
-      
-    
-      
     </footer>
   </div>
   
@@ -109,5 +119,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  
 </body>
 </html>
