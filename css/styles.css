@@ -15,7 +15,7 @@ header {
   background: url(../images/bg-hero-mobile.svg);
   background-size: cover; }
 
-#top {
+.top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,18 +95,20 @@ header {
 footer {
   background-color: #00252e;
   color: white;
-  padding: 45px 6%; }
+  padding: 200px 6% 45px 6%; }
 
 .footer-logo {
-  width: 200px;
-  color: white; }
+  width: 230px;
+  color: white;
+  margin-bottom: 20px; }
 
 .footer-card {
   background-color: white;
   color: black;
   border-radius: 15px;
   padding: 40px 12px;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .footer-card h1 {
   font-family: 'Poppins', sans-serif;
@@ -136,6 +138,9 @@ footer .contacts .row {
 footer .contacts .col1 {
   margin-right: 30px; }
 
+footer .contacts .col2 {
+  font-size: 0.9rem; }
+
 footer .links ul {
   list-style: none; }
 
@@ -148,6 +153,9 @@ footer .links ul a {
 
 footer .social-icons {
   text-align: center; }
+
+footer .social-icons a {
+  margin: 0 4px; }
 
 footer .social-icons i {
   border-radius: 50%;
@@ -169,3 +177,69 @@ footer .copyright {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #808d99; }
+
+@media screen and (min-width: 850px) {
+  .top {
+    padding: 50px 7%; }
+  .header-logo {
+    width: 190px; }
+  .button-try-it {
+    font-size: 0.8rem;
+    padding: 15px 40px;
+    border-radius: 20px; }
+  .build-community {
+    flex-direction: row;
+    padding: 0 7%;
+    text-align: left; }
+  .build-community .text .wrapper {
+    padding-right: 10%; }
+  .build-community h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem; }
+  .build-community p {
+    font-size: 1rem; }
+  .build-community button {
+    max-width: 300px;
+    font-size: 0.7rem;
+    padding: 17px 65px; }
+  .text {
+    flex: 0.85; }
+  .image {
+    flex: 1; }
+  .card {
+    margin: 7%;
+    flex-direction: row; }
+  .card-image {
+    flex: 1; }
+  .card-text {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .card img {
+    margin-bottom: 0;
+    height: 340px; }
+  .card h1 {
+    font-size: 1.6rem; }
+  .card p {
+    font-size: 1.1rem;
+    line-height: 1.5rem; }
+  .card1 .card-text, .card3 .card-text {
+    order: 1; }
+  .card1 .card-image, .card3 .card-image {
+    order: 2; }
+  footer .center {
+    display: flex;
+    flex-direction: row; }
+  footer .center .contacts {
+    flex: 2.1; }
+  footer .center .contacts .col2 {
+    padding-right: 20%; }
+  footer .center .links {
+    flex: 1; }
+  footer .center .social-icons {
+    flex: 1;
+    text-align: left; }
+  footer .lower .copyright {
+    text-align: right; } }
