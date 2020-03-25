@@ -5,14 +5,15 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #00252e; }
 
 html, body, .page-wrapper {
   height: 100%; }
 
 header {
   font-family: 'Poppins', sans-serif;
-  background: url(../images/bg-hero-mobile.svg);
+  background: url(../images/bg-hero-mobile.svg) #ebfbff;
   background-size: cover; }
 
 .top {
@@ -27,12 +28,13 @@ header {
 
 .button-try-it {
   background-color: white;
-  border-radius: 10px;
-  font-size: 0.6rem;
-  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.55rem;
+  padding: 6px 17px;
   border: 0;
   font-weight: 600;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none; }
 
 .build-community {
   display: flex;
@@ -63,17 +65,22 @@ header {
   padding: 11px 55px;
   border: 0;
   border-radius: 25px;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  outline: none; }
 
 .build-community img {
   max-width: 100%; }
+
+main {
+  padding-top: 40px;
+  padding-bottom: 220px; }
 
 .card {
   display: flex;
   flex-direction: column;
   padding: 40px;
   margin: 5%;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 20px; }
 
@@ -95,20 +102,27 @@ header {
 footer {
   background-color: #00252e;
   color: white;
-  padding: 200px 6% 45px 6%; }
+  padding: 150px 6% 45px 6%;
+  position: relative; }
 
 .footer-logo {
-  width: 230px;
+  width: 170px;
   color: white;
   margin-bottom: 20px; }
 
 .footer-card {
   background-color: white;
-  color: black;
   border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
   padding: 40px 12px;
   text-align: center;
-  display: none; }
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  left: 0;
+  right: 0;
+  top: -100px; }
 
 .footer-card h1 {
   font-family: 'Poppins', sans-serif;
@@ -124,7 +138,8 @@ footer {
   font-size: 0.55rem;
   padding: 11px 47px;
   border: 0;
-  border-radius: 25px; }
+  border-radius: 25px;
+  outline: none; }
 
 footer .contacts {
   display: flex;
@@ -139,7 +154,8 @@ footer .contacts .col1 {
   margin-right: 30px; }
 
 footer .contacts .col2 {
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  color: #ebfbff; }
 
 footer .links ul {
   list-style: none; }
@@ -161,7 +177,7 @@ footer .social-icons i {
   border-radius: 50%;
   border: 1px solid white;
   padding: 7px;
-  color: white;
+  color: #ebfbff;
   font-size: 15px;
   width: 30px; }
 
@@ -175,8 +191,7 @@ footer .copyright {
   font-size: 0.6rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #808d99; }
+  color: #ebfbff; }
 
 @media screen and (min-width: 850px) {
   .top {
@@ -185,7 +200,7 @@ footer .copyright {
     width: 190px; }
   .button-try-it {
     font-size: 0.8rem;
-    padding: 15px 40px;
+    padding: 15px 65px;
     border-radius: 20px; }
   .build-community {
     flex-direction: row;
@@ -229,12 +244,28 @@ footer .copyright {
     order: 1; }
   .card1 .card-image, .card3 .card-image {
     order: 2; }
+  .footer-card {
+    width: 850px;
+    padding: 60px 12px;
+    top: -180px; }
+  .footer-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem; }
+  .footer-card button {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 25px 100px;
+    border-radius: 50px; }
+  .footer-logo {
+    width: 220px;
+    color: #ebfbff;
+    margin-bottom: 35px; }
   footer .center {
     display: flex;
     flex-direction: row; }
   footer .center .contacts {
     flex: 2.1; }
-  footer .center .contacts .col2 {
+  footer .center .contacts .wrapper {
     padding-right: 20%; }
   footer .center .links {
     flex: 1; }
@@ -242,4 +273,5 @@ footer .copyright {
     flex: 1;
     text-align: left; }
   footer .lower .copyright {
-    text-align: right; } }
+    text-align: right;
+    font-size: 0.7rem; } }
